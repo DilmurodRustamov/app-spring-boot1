@@ -1,11 +1,11 @@
-package uz.pdp.appspringboot1.service;
+package uz.developer.appspringboot1.service;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import uz.pdp.appspringboot1.entity.Contact;
-import uz.pdp.appspringboot1.payload.ReqContact;
-import uz.pdp.appspringboot1.repository.ContactRepository;
+import uz.developer.appspringboot1.entity.Contact;
+import uz.developer.appspringboot1.payload.ReqContact;
+import uz.developer.appspringboot1.repository.ContactRepository;
 
 import java.util.List;
 import java.util.Optional;
@@ -18,7 +18,8 @@ public class ContactService {
 
     public boolean saveContact(ReqContact reqContact) {
         boolean existsByNumber = contactRepository.existsByNumber(reqContact.getNumber());
-        if (!existsByNumber) {
+        if (!existsByNumber) { 
+            
             Contact contact = new Contact();
             contact.setFirstName(reqContact.getFirstName());
             contact.setLastName(reqContact.getLastName());

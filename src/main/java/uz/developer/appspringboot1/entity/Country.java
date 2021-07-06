@@ -1,4 +1,4 @@
-package uz.pdp.appspringboot1.entity;
+package uz.developer.appspringboot1.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;

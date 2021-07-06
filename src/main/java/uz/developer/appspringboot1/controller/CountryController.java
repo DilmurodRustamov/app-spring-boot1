@@ -1,4 +1,4 @@
-package uz.pdp.appspringboot1.controller;
+package uz.developer.appspringboot1.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
@@ -6,12 +6,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import uz.pdp.appspringboot1.entity.Country;
-import uz.pdp.appspringboot1.entity.Region;
-import uz.pdp.appspringboot1.payload.ReqCountry;
-import uz.pdp.appspringboot1.payload.ReqRegion;
-import uz.pdp.appspringboot1.repository.CountryRepository;
-import uz.pdp.appspringboot1.service.CountryService;
+import uz.developer.appspringboot1.entity.Country;
+import uz.developer.appspringboot1.payload.ReqCountry;
+import uz.developer.appspringboot1.repository.CountryRepository;
+import uz.developer.appspringboot1.service.CountryService;
 
 import java.util.List;
 import java.util.Optional;

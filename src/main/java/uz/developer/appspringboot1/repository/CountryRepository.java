@@ -1,8 +1,7 @@
-package uz.pdp.appspringboot1.repository;
+package uz.developer.appspringboot1.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import uz.pdp.appspringboot1.entity.Country;
-import uz.pdp.appspringboot1.entity.Region;
+import uz.developer.appspringboot1.entity.Country;
 
 public interface CountryRepository extends JpaRepository<Country,Integer> {
     boolean existsByNameUzEqualsIgnoreCaseOrNameRuEqualsIgnoreCaseOrNameEnEqualsIgnoreCase(String nameUz, String nameRu, String nameEn);

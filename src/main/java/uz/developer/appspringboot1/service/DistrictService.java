@@ -1,12 +1,12 @@
-package uz.pdp.appspringboot1.service;
+package uz.developer.appspringboot1.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import uz.pdp.appspringboot1.entity.District;
-import uz.pdp.appspringboot1.entity.Region;
-import uz.pdp.appspringboot1.payload.ReqDistrict;
-import uz.pdp.appspringboot1.repository.DistrictRepository;
-import uz.pdp.appspringboot1.repository.RegionRepository;
+import uz.developer.appspringboot1.entity.District;
+import uz.developer.appspringboot1.entity.Region;
+import uz.developer.appspringboot1.payload.ReqDistrict;
+import uz.developer.appspringboot1.repository.DistrictRepository;
+import uz.developer.appspringboot1.repository.RegionRepository;
 
 import java.util.List;
 import java.util.Optional;

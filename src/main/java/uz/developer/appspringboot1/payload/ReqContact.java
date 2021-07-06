@@ -1,8 +1,7 @@
-package uz.pdp.appspringboot1.payload;
+package uz.developer.appspringboot1.payload;
 
 import lombok.Data;
 
-import javax.persistence.Column;
 @Data
 public class ReqContact {
 

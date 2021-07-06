@@ -1,16 +1,18 @@
-package uz.pdp.appspringboot1.entity;
+package uz.developer.appspringboot1.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class District {
+public class Region {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -25,5 +27,9 @@ public class District {
     private String nameEn;
 
     @ManyToOne
-    private Region region;
+    private Country country;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "region")
+    private List<District> districts;
 }

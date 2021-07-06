@@ -1,8 +1,8 @@
-package uz.pdp.appspringboot1.repository;
+package uz.developer.appspringboot1.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import uz.pdp.appspringboot1.entity.Contact;
+import uz.developer.appspringboot1.entity.Contact;
 
 @Repository
 public interface ContactRepository extends JpaRepository<Contact, Integer> {

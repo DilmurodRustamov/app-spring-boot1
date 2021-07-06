@@ -1,14 +1,13 @@
-package uz.pdp.appspringboot1.controller;
+package uz.developer.appspringboot1.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import uz.pdp.appspringboot1.entity.Contact;
-import uz.pdp.appspringboot1.payload.ReqContact;
-import uz.pdp.appspringboot1.repository.ContactRepository;
-import uz.pdp.appspringboot1.service.ContactService;
+import uz.developer.appspringboot1.entity.Contact;
+import uz.developer.appspringboot1.payload.ReqContact;
+import uz.developer.appspringboot1.repository.ContactRepository;
+import uz.developer.appspringboot1.service.ContactService;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.Optional;
 
@@ -49,8 +48,7 @@ public class ContactController {
     @RequestMapping(value = "/contact/{id}",method = RequestMethod.PUT)
     @ResponseBody
     public boolean editContact(@PathVariable Integer id, @RequestBody ReqContact reqContact){
-        boolean editContact = contactService.editContact(id, reqContact);
-        return editContact;
+        return contactService.editContact(id, reqContact);
 
     }
 

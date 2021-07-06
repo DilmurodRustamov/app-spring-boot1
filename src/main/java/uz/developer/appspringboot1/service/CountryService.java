@@ -1,10 +1,10 @@
-package uz.pdp.appspringboot1.service;
+package uz.developer.appspringboot1.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import uz.pdp.appspringboot1.entity.Country;
-import uz.pdp.appspringboot1.payload.ReqCountry;
-import uz.pdp.appspringboot1.repository.CountryRepository;
+import uz.developer.appspringboot1.entity.Country;
+import uz.developer.appspringboot1.payload.ReqCountry;
+import uz.developer.appspringboot1.repository.CountryRepository;
 
 import java.util.List;
 import java.util.Optional;
